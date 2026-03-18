@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <!--link rel="icon" href="https://www.google.com/favicon.ico">-->
+    <style>
+        /* Add your CSS styles here */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        /* Estilos para el menú de la derecha (segundo div) */
+        header>div:last-child {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 8px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            justify-content: left;
+        }
+
+        .menu div {
+            border: 3px solid black;
+            width: 0%;
+            height: 0px;
+            margin: 2px;
+            border-radius: 50%;
+        }
+
+        header img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +70,7 @@
                 <a href="https://www.google.com/imghp?hl=es&tab=ri&ogbl">Imágenes</a>
             </nav>
 
-            <div>
+            <div class="menu">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -37,6 +82,7 @@
                 <div></div>
             </div>
             <img src="http://picsum.photos/200" alt="">
+
         </div>
     </header>
     <main>
