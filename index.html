@@ -9,6 +9,7 @@
     <style>
         /* Add your CSS styles here */
         @import url('https://fonts.cdnfonts.com/css/product-sans');
+
         header {
             display: flex;
             justify-content: space-between;
@@ -50,12 +51,14 @@
             object-fit: cover;
 
         }
+
         main {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
         }
+
         h1 {
             font-size: 92px;
             font-family: 'Product Sans', sans-serif;
@@ -63,17 +66,72 @@
             align-items: center;
             justify-content: center;
         }
+
         .rojo {
             color: red;
         }
+
         .azul {
             color: blue;
         }
+
         .amarillo {
             color: yellow;
         }
+
         .berde {
             color: green;
+        }
+
+        main form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        main form input {
+            width: 580px;
+            height: 40px;
+            border-radius: 24px;
+            padding: 0 20px;
+            font-family: 'Product Sans', sans-serif;
+            font-size: 16px;
+            resize: none;
+            border: 1px solid #dfe1e5;
+            outline: none;
+        }
+
+        form div {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        form button {
+            height: 36px;
+            padding: 0 16px;
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            align-items: center;
+        }
+        ul p {
+            margin: 0;
+            
         }
     </style>
 </head>
@@ -112,11 +170,14 @@
     </header>
     <main>
         <section>
-            <h1><span class="azul">G</span><span class="rojo">o</span><span class="amarillo">o</span><span class="azul">g</span><span class="berde">l</span><span class="rojo">e</span></h1>
+            <h1><span class="azul">G</span><span class="rojo">o</span><span class="amarillo">o</span><span
+                    class="azul">g</span><span class="berde">l</span><span class="rojo">e</span></h1>
             <form action="https://www.google.com/search" method="get">
                 <input type="text" name="q" placeholder="Buscar en Google o escribir una URL">
-                <button type="submit">Buscar con Google</button>
-                <button type="submit" name="btnI">Voy a tener suerte</button>
+                <div>
+                    <button type="submit">Buscar con Google</button>
+                    <button type="submit" name="btnI">Voy a tener suerte</button>
+                </div>
             </form>
         </section>
         <nav>
